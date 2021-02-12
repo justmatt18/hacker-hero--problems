@@ -43,9 +43,14 @@ For this challenge, it could print/log all of these numbers in a single row or a
 */
 
 const mutilpleTable = (x, y) => {
-  console.log(`HELLO`);
+  for (let i = 1; i <= y; i++) {
+    for (let j = 1; j <= x; j++) {
+      let value = j * i;
+      console.log(value);
+    }
+  }
 };
-
+mutilpleTable(5, 8);
 // ? Test Cases:
 /*
 multiTable(2,2) to log 1 2 2 4

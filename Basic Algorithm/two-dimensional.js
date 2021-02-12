@@ -22,8 +22,19 @@ Whenever you're dealing with two dimensional arrays, be extra cautious on every 
 A simple typo or forgetting to add a comma or a square bracket can ruin the whole program.
 */
 
-const twoDimensional = (row, column) => {};
+const twoDimensional = (column, row) => {
+  let array = [];
+  for (let i = 0; i < row; i++) {
+    array.push([]);
+    for (let j = 0; j < column; j++) {
+      array[i].push(0);
+    }
+  }
+  console.log(array);
+  return array;
+};
 
+twoDimensional(3, 4);
 /*
 ? Test Cases
 twoDimensional(2,5) to return [[0,0,0,0,0],[0,0,0,0,0]]
